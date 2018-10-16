@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X8R-6L-cOJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Roselia-->
+        <scene sceneID="neO-aa-ubs">
+            <objects>
+                <navigationController title="Roselia" id="4Ab-sd-ncA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Roselia" id="6TE-Ci-doV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBS-d4-3cV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ipn-BO-urd" kind="show" id="QgX-FQ-FT3"/>
+                        <segue destination="Ipn-BO-urd" kind="relationship" relationship="rootViewController" id="8dX-R8-Xaa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CXP-9z-6qX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="332"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="baS-hE-O2R">
+            <objects>
+                <tableViewController id="Ipn-BO-urd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="DNk-Rj-mVB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Roselia" id="baP-bl-7lQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i6m-9p-gip">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i6m-9p-gip" id="Ahs-lf-OHl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="blackshout" highlightedImage="blackshout" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-2w-Vn7">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" BLACK SHOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn2-MT-Vno">
+                                                    <rect key="frame" x="121" y="28" width="136" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ojC-yE-azm" kind="show" id="zee-wY-A1K"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZXY-TL-zOt">
+                                        <rect key="frame" x="0.0" y="133" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZXY-TL-zOt" id="xWL-dh-pk7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="rebirth" highlightedImage="rebirth" translatesAutoresizingMaskIntoConstraints="NO" id="GYP-j5-hHU">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re:birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isV-5l-7aR">
+                                                    <rect key="frame" x="121" y="28" width="141" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="pv6-Wc-nWt" kind="show" id="UOT-xM-mId"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xNB-VW-1Go">
+                                        <rect key="frame" x="0.0" y="238" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xNB-VW-1Go" id="D35-OM-wao">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="retusyoku" highlightedImage="retusyoku" translatesAutoresizingMaskIntoConstraints="NO" id="4Xt-DP-Nmf">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="熱色スターマイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-gZ-ViZ">
+                                                    <rect key="frame" x="121" y="28" width="168" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xdG-bB-53c" kind="show" id="6YD-gp-qcu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GHe-sW-nZp">
+                                        <rect key="frame" x="0.0" y="343" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GHe-sW-nZp" id="hut-h2-kN5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="oneness" highlightedImage="oneness" translatesAutoresizingMaskIntoConstraints="NO" id="EOz-hb-8Ef">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ONENESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENO-3u-6hT">
+                                                    <rect key="frame" x="121" y="28" width="116" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="q3H-7e-6f5" kind="show" id="diS-pH-N3V"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aRz-dT-eDL">
+                                        <rect key="frame" x="0.0" y="448" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aRz-dT-eDL" id="s8e-DU-923">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="opera" highlightedImage="opera" translatesAutoresizingMaskIntoConstraints="NO" id="9VL-qe-DXL">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opera of the Wasteland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWC-Lc-cLX">
+                                                    <rect key="frame" x="121" y="28" width="201" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WCw-DZ-5sV" kind="show" id="T9c-BP-l2T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Ipn-BO-urd" id="2AG-fJ-XWK"/>
+                            <outlet property="delegate" destination="Ipn-BO-urd" id="7et-db-42u"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Kau-gx-yib"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJb-O5-q3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.8" y="323.38830584707648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1iV-Vr-VB5">
+            <objects>
+                <viewController id="ojC-yE-azm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uh3-3u-JRr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zde-yV-4O9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="prd-X5-i4n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="73l-4P-RZE">
+                                <rect key="frame" x="30" y="92" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">スマートフォン向けゲーム『バンドリ! ガールズバンドパーティ! 』のゲームオリジナルバンドRoselia。
+『BanG Dream! 3rd☆LIVE Sparklin' PARTY 2017!』にてシークレット出演した際に生演奏を披露した、オリジナル楽曲「BLACK SHOUT」を1stシングルに収録! 
+楽曲は上松範康(Elements Garden)プロデュース。Roseliaの世界感が溢れるダークでクールなロックチューンをお聴き逃し無く! 
+また、Blu-ray付生産限定盤には、鮮烈なデビューを果たした『BanG Dream! 3rd☆LIVE Sparklin' PARTY 2017!』での「BLACK SHOUT」ライブ映像が付いてくる! 
+
+【CD収録内容】
+1.BLACK SHOUT 
+2.LOUDER
+3.BLACK SHOUT -instrumental- 
+4.LOUDER -instrumental-
+5.Roseliaミニドラマ~バンド練習編~  </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztv-FV-OjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="-920.68965517241384"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mIx-8a-Ay8">
+            <objects>
+                <viewController id="pv6-Wc-nWt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="njc-gd-Hne"/>
+                        <viewControllerLayoutGuide type="bottom" id="p3g-JJ-cH2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6xP-jU-4KC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgi-xY-Fdp">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">スマートフォン向けゲーム『バンドリ! ガールズバンドパーティ! 』のゲームオリジナルバンドRoselia。
+衝撃のデビューを果たした1stシングルから、早2か月。ゲームの中で公開され大反響のRe:birthdayを収録! 
+楽曲は上松範康(Elements Garden)プロデュース。Roseliaの奏でる最高にエモーショナルな音色をご堪能ください! 
+
+【収録内容】
+[CD]
+1Re:birthday
+2.タイトル未定
+3.Re:birthday -instrumental-
+4.タイトル未定 -instrumental-
+5..Roseliaミニドラマ </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wdv-8Y-cWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="-284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w1f-ax-iwt">
+            <objects>
+                <viewController id="xdG-bB-53c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6e-y6-Glg"/>
+                        <viewControllerLayoutGuide type="bottom" id="UDS-Yf-d8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8tm-RP-umg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="slZ-yP-HsP">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">スマートフォン向けゲーム『バンドリ! ガールズバンドパーティ! 』発のゲームオリジナルバンド・Roseliaが、3rdシングルを発売! 
+TVアニメ「BanG Dream!」の14話エンディング曲として、物語を彩るにふさわしい一曲となっている。
+楽曲は、クリエイター集団・Elements Gardenの上松範康プロデュース。
+夏の海辺の情景が目に浮かぶような、Roseliaらしいダークさとクールさを兼ね備えたナンバーは必聴だ! 
+
+【収録内容】
+[CD]
+1.熱色スターマイン
+2. -HEROIC ADVENT-
+3.熱色スターマイン -instrumental-
+4. -HEROIC ADVENT- -instrumental- </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k65-zG-P1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="371"/>
+        </scene>
+        <!--Afterglow-->
+        <scene sceneID="hTP-1J-k8p">
+            <objects>
+                <navigationController title="Afterglow" id="3N8-fd-3bJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Afterglow" id="oxK-0b-SvQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wNR-0M-N8s">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CnJ-Co-g7a" kind="show" id="Dn8-7J-SoX"/>
+                        <segue destination="CnJ-Co-g7a" kind="relationship" relationship="rootViewController" id="w0V-tt-1L8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJv-LR-wba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="3107"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="jeF-Kd-VyZ">
+            <objects>
+                <tableViewController id="CnJ-Co-g7a" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" id="6L7-AU-66d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle="Poppin'party" id="Yfn-Nh-63j">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iV8-Ax-xYC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iV8-Ax-xYC" id="C2i-Yp-ot7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="yesbangdream" highlightedImage="yesbangdream" translatesAutoresizingMaskIntoConstraints="NO" id="KGP-UE-IyH">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes! BanG Dream!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="546-0d-WAY">
+                                                    <rect key="frame" x="121" y="28" width="158" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gFc-eE-bwr" kind="show" id="GJn-nW-Ito"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jBk-B8-3F8">
+                                        <rect key="frame" x="0.0" y="133" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jBk-B8-3F8" id="H4u-0C-t1f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="tokimeki" highlightedImage="tokimeki" translatesAutoresizingMaskIntoConstraints="NO" id="N1e-J0-08Y">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ときめきエクスペリエンス!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7h-aZ-bGr">
+                                                    <rect key="frame" x="121" y="28" width="238" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6il-v8-y9d" kind="show" id="WEq-kA-Ube"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="K8B-1e-yqb">
+                                        <rect key="frame" x="0.0" y="238" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K8B-1e-yqb" id="0x2-oQ-jmN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="maehesusume" highlightedImage="maehesusume" translatesAutoresizingMaskIntoConstraints="NO" id="UJZ-Wr-cBt">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="前へススメ!/夢みるSunflower" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh4-kE-InY">
+                                                    <rect key="frame" x="121" y="28" width="238" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Bkp-HG-laT" kind="show" id="eSx-24-0fA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7vw-pG-dSK">
+                                        <rect key="frame" x="0.0" y="343" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7vw-pG-dSK" id="zmc-XQ-zaT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="circle" highlightedImage="circle" translatesAutoresizingMaskIntoConstraints="NO" id="sCj-cV-wNJ">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CiRCLING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwv-nB-kv3">
+                                                    <rect key="frame" x="121" y="28" width="132" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Eze-Fw-7t9" kind="show" id="Hlb-dY-id1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CIa-Rr-1qc">
+                                        <rect key="frame" x="0.0" y="448" width="375" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CIa-Rr-1qc" id="wkK-nC-3f7">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="garusukodo" highlightedImage="garusukodo" translatesAutoresizingMaskIntoConstraints="NO" id="zDv-3w-1cc">
+                                                    <rect key="frame" x="8" y="0.0" width="105" height="104"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ガールズコード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl4-Qw-tNc">
+                                                    <rect key="frame" x="121" y="28" width="181" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gfm-4h-OCf" kind="show" id="EOz-RI-Lye"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="CnJ-Co-g7a" id="aZS-sA-KE4"/>
+                            <outlet property="delegate" destination="CnJ-Co-g7a" id="73Q-6n-KS3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Qni-qc-23e"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U68-Ok-Fa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093.5999999999999" y="3108.3958020989508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kgK-zn-eps">
+            <objects>
+                <viewController id="q3H-7e-6f5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MDF-gg-zJM"/>
+                        <viewControllerLayoutGuide type="bottom" id="jxf-50-IJ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E3v-cs-YVa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y4z-gB-n1y">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">10月に開催されたRoselia 2ndライブで初披露された、Determination Symphonyが早くも発売決定! 
+Roseliaらしいエモーショナルなロックチューンに仕上がった今作もElements Gardenプロデュース。
+限定盤に付いてくるBlu-rayには、7月に有明コロシアムで行われた1stライブ追加公演の映像を収録。ファン必携の一枚です! 
+
+【収録内容】
+[CD]
+1.ONENESS
+2.Determination Symphony
+3.ONENESS -instrumental-
+4.Determination Symphony -instrumental- </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzh-V2-3zu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="1017"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wm2-5v-xyb">
+            <objects>
+                <viewController id="WCw-DZ-5sV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNx-bO-g9P"/>
+                        <viewControllerLayoutGuide type="bottom" id="62S-ya-o4v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AnS-AT-nxE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vlk-x4-IHX">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">スマートフォン向けアプリゲーム「バンドリ！ ガールズバンドパーティ！」発のゲームオリジナルバンド「Roselia」が、早くも5thシングルを発売！
+デビューからわずか1年ながら、 過去に発売したCDは全てオリコン週間ランキングTOP10入りを果たし、ライブもSOLD OUTが続く今注目のガールズバンドから目が離せない！
+表題曲の「Opera of the wasteland」は、アプリ内でRoseliaが協力してRPGをプレイするイベントストーリーを元にした、冒険をイメージした楽曲です。ゲーム内で読めるストーリーと一緒に楽しむのがおすすめです！
+カップリング曲「軌跡」はRoselia初のバラード曲。エモーショナルな歌詞にも注目です。
+本作もElements Gardenの上松範康プロデュース。
+これまでのRoseliaらしさを魅せつつ、新たな一面がみられる楽曲に仕上がっています。
+
+[CD]
+1.Opera of the wasteland
+2.軌跡
+3.Opera of the wasteland -instrumental-
+4.軌跡 -instrumental-  </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xb9-y7-KUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468" y="1650"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IhR-rt-igP">
+            <objects>
+                <viewController id="gFc-eE-bwr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VOR-vg-4NA"/>
+                        <viewControllerLayoutGuide type="bottom" id="iei-Nf-mOF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PuJ-va-hcx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VLs-0v-Tbk">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">BanG Dream!初のオリジナル曲であり、ライブでの定番曲「Yes! BanG_Dream!」がついにリリース！
+「Yes! BanG_Dream!」とカップリング曲「ぽっぴん’しゃっふる」ともに上松範康(Elements Garden)プロデュース！
+BanG Dream!初のボイスコンテンツとして、各キャラクターのボイストラックを収録！
+また、Blu-ray付生産限定盤には「Yes! BanG_Dream!」アニメーションミュージックビデオのフルがついてくる！
+一緒に”音楽（キズナ）”を奏でよう！
+
+【CD収録内容】
+1 Yes! BanG_Dream!
+2 ぽっぴん’しゃっふる
+3 Yes! BanG_Dream! -instrumental-
+4 ぽっぴん’しゃっふる -instrumental-
+5 ボイストラック〜戸山香澄〜
+6 ボイストラック〜花園たえ〜
+7 ボイストラック〜牛込りみ〜
+8 ボイストラック〜山吹沙綾〜
+9 ボイストラック〜市ヶ谷有咲〜 </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wG5-JN-Qrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3458" y="2307"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kdz-NS-QZt">
+            <objects>
+                <viewController id="6il-v8-y9d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gvt-Yz-huq"/>
+                        <viewControllerLayoutGuide type="bottom" id="RPZ-JX-GSQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fAD-fs-LQN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UAX-BX-Vh7">
+                                <rect key="frame" x="29" y="83" width="317" height="564"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">2017年より放送が開始されるTVアニメ「バンドリ！」のOP主題歌が発売決定！！
+担当するのはもちろん、Poppin’Party！表題曲は完全新曲の「ときめきエクスペリエンス！」。
+勢いのある、まさに物語の”はじまり”にふさわしい楽曲で、ライブでの掛け合いもきっと楽しめる、盛り上がれる楽曲です。
+
+そしてカップリング曲は、2ndライブで初披露し、会場全体に感動を巻き起こした名曲、「1000回潤んだ空」！
+待望の音源化です！本作の音楽プロデュースを務めるのは、Elements Gardenの上松範康と藤田淳平。
+ボーナストラックにはPoppin’Partyのかわいい掛け合いを楽しめる、ミニドラマを収録しています。
+胸に熱く突き刺さる、期待の2曲を是非、お楽しみください！
+(※仕様・収録内容に関しましては予告無く変更する場合がございます。)
+
+
+【CD収録内容】
+1.ときめきエクスペリエンス！
+2.1000回潤んだ空
+3.ときめきエクスペリエンス！ -instrumental-
+4.1000回潤んだ空 -instrumental-
+5.バンドリ！ミニドラマ～放課後の過ごし方～ </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rlv-iw-YYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464.8000000000002" y="2961.7691154422791"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VaN-4S-G13">
+            <objects>
+                <viewController id="Bkp-HG-laT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8rk-tm-FCv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlH-nM-p9H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYw-zA-aoq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A3C-gi-j7K">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">5/10(水)にPoppin’Party6thシングルCDの発売が決定！！
+CDジャケットと、両A面となる2曲目のタイトルも解禁致しました！
+両曲ともアニメの中で初披露され大反響を呼んだ、Poppin’Partyの歴史に残る新たな名曲です！！
+
+本作も音楽プロデュースを務めるのは、Elements Gardenの上松範康と藤田淳平。
+2017年8月に日本武道館公演の開催を発表したばかりの「Poppin’Party」！
+6枚目のシングルもぜひゲットして、たくさんお聴きくださいね♪♪
+
+
+【CD収録内容】
+1.前へススメ！
+2.夢みるSunflower  
+3.前へススメ！ -instrumental-
+4.夢みるSunflower -instrumental- 
+[ドラマパート] 
+5.楽曲紹介 from Poppin’Party   </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oh7-0J-l2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3471" y="3609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="la6-ul-j2p">
+            <objects>
+                <viewController id="Eze-Fw-7t9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ikF-se-wtA"/>
+                        <viewControllerLayoutGuide type="bottom" id="gEc-iC-HMi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gla-BW-YbJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4KZ-Cs-drd">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">キャラクターとリアルライブがリンクする！次世代ガールズバンドプロジェクト「BanG Dream!（バンドリ！）」からPoppin’Partyが9枚目のシングルを堂々リリース！
+表題曲「CiRCLING」はスマートフォン向けゲーム「バンドリ！ ガールズバンドパーティ！」内の「フェス」をテーマにしたイベントストーリーで配信され、大好評を博した楽曲。
+コール＆レスポンスが多数盛り込まれたこの楽曲は、実際のライブでも盛り上がること間違いなし！明るさの中にも音楽や仲間に対する想いが込められた、胸に響くナンバーです。
+カップリング曲の「Light Delight」はPoppin’Partyからのメッセージが詰まった、壮大なバラード。ラストに向かっての各メンバーのソロパートに涙するファンも多いはず！
+本作も音楽プロデュースを務めるのは、Elements Garden。日々進化し続けるPoppin’Partyの幅を感じられるこの作品を、存分にお楽しみください！
+
+[CD]
+1.CiRCLING
+2.Light Delight
+3.CiRCLING -instrumental-
+4.Light Delight -instrumental-</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYe-y6-i5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3497" y="4268"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n1a-b8-1bv">
+            <objects>
+                <viewController id="gfm-4h-OCf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rwl-Fg-Vtl"/>
+                        <viewControllerLayoutGuide type="bottom" id="NOa-yC-T3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BkI-kb-geY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9An-xz-Hv9">
+                                <rect key="frame" x="29" y="83" width="317" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">快進撃が止まらないPoppin'Partyが、この秋11thシングルをリリース！
+初回生産分には2018年12月に両国国技館にて開催されるBanG Dream! 6th☆LIVEの抽選応募申込券が封入される。
+表題曲の「ガールズコード」はPoppin'Partyの等身大の可愛さ、女の子らしさがギュッと詰め込まれたナンバー。
+ポップな曲調の中にもどこか「夏の終わり、秋の訪れ」が感じられる楽曲となっている。
+カップリングの「切ないSandglass」は本作のために書き下ろされた楽曲。
+巡る季節を思わせる壮大なメロディーとノスタルジックな歌詞に酔いしれてほしい。
+いずれも楽曲プロデュースはElements Garden。
+BanG Dream! 新アニメシリーズの制作も決定し、勢いが止まらないPoppin'Partyの最新作をお聞き逃しなく！
+1.ガールズコード
+2.切ないSandglass
+3.ガールズコード -instrumental-
+4.切ないSandglass -instrumental-
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upO-B5-XWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3503" y="4926"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8hZ-9Y-OIs">
+            <objects>
+                <tabBarController id="X8R-6L-cOJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wOh-5V-YHc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3N8-fd-3bJ" kind="show" id="dVH-iA-tkW"/>
+                        <segue destination="3N8-fd-3bJ" kind="relationship" relationship="viewControllers" id="UNz-Ok-HIx"/>
+                        <segue destination="4Ab-sd-ncA" kind="show" id="pw7-Jw-EeG"/>
+                        <segue destination="4Ab-sd-ncA" kind="relationship" relationship="viewControllers" id="AEP-Yg-t85"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAG-lb-rcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="1391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blackshout" width="135" height="135"/>
+        <image name="circle" width="135" height="135"/>
+        <image name="garusukodo" width="135" height="135"/>
+        <image name="maehesusume" width="135" height="135"/>
+        <image name="oneness" width="135" height="135"/>
+        <image name="opera" width="135" height="135"/>
+        <image name="rebirth" width="135" height="135"/>
+        <image name="retusyoku" width="135" height="135"/>
+        <image name="tokimeki" width="135" height="135"/>
+        <image name="yesbangdream" width="135" height="135"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="w0V-tt-1L8"/>
+        <segue reference="dVH-iA-tkW"/>
+        <segue reference="QgX-FQ-FT3"/>
+        <segue reference="pw7-Jw-EeG"/>
+    </inferredMetricsTieBreakers>
+</document>
